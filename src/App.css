@@ -1,0 +1,40 @@
+/* #Main{
+  left: auto;
+} */
+/* .ControlPanel{
+  display: inline;
+} */
+#cards{
+  list-style-type: none;
+}
+#cards li{
+  display: inline-block;
+  padding: 15px;
+}
+.Card{
+  /* display: flex; */
+  justify-content: center;
+  background-color: gray;
+}
+.Card:hover{
+  background-color: bisque;
+  transition: background-color 0.3 ease;
+}
+.Preview{
+  position: relative;
+  /* left:50px */
+}
+.ControlPanel{
+  display: flex;
+  justify-content: center;
+}
+.ControlPanel button{
+  height: 3rem;
+  width: 3rem;
+  display: inline;
+  align-items: center;
+}
+.ControlPanel h1{
+  align-items: center;
+  display: inline;
+}
