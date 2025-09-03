@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import BasketContext from '../basketContext'
+import {BasketContext} from '../basketContext'
 // 
 // Создать мини приложение с карточкой товара и счётчиком
 //Требования : создать компонент продукт кард, который отображает цену товара, изображение товара, в компоненте должна быть кнопка добавить в корзину с счётчиком количества
