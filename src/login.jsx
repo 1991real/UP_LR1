@@ -5,7 +5,7 @@ export default function Login(){
     function handleLogin(){
         const isAuth = true;
         if (isAuth) {
-            navigate("/dashboard")
+            navigate("/")
         }
         else{
             alert("Auth error")

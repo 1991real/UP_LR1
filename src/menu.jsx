@@ -3,6 +3,7 @@ import { ThemeContext } from "./themeContext";
 import { NavLink,Link, Route, Routes } from "react-router-dom";
 import Product from "./product";
 import About from "./about"
+import Login from "./login";
 import Home from "./home"
 import Basket from "./basket"
 function Menu(){
@@ -26,22 +27,19 @@ function Menu(){
             <NavLink to="/about" style={navLinkStyle}>
             About us
             </NavLink>
-            <Link to="/product/1" style={linkStyle}>
-            Product 1
-            </Link>
-            <Link to="/product/2" style={linkStyle}>
-            Product 2
-            </Link>
-            <Link to="/basket" style={linkStyle}>
+            <NavLink to="/login" style={navLinkStyle}>
+            Login
+            </NavLink>
+            <NavLink to="/basket" style={navLinkStyle}>
             Basket
-            </Link>
+            </NavLink>
             <button onClick={toggleTheme} style ={{marginLeft:"20px"}}>
                 Переключить тему ({theme})
             </button> 
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/product/:id" element={<Product/>}/>
+                <Route path="/login" element={<Login/>}/>
                 <Route path="/basket" element={<Basket/>}/>
             </Routes>
         </nav>
